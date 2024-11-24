@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            background-image: url("Free\ Vector\ _\ Variety\ of\ medical\ situations\ in\ flat\ style.jpg");
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .service-description {
+            margin-bottom: 20px;
+        }
+        .service-description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .service-description p {
+            font-size: 16px;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.contact-form').addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent the default form submission
+                window.location.href = "payment.html"; // Redirect to the payment page
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Health Services</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Service Description -->
+        <div class="service-description">
+            <h2>Professional In-Home Health Services</h2>
+            <p>Our team of healthcare professionals provides a range of in-home health services to meet your medical needs. Whether you require nursing care, physical therapy, medication management, or other specialized services, we're here to help you maintain your health and well-being in the comfort of your own home.</p>
+            <p>Contact us today to learn more about our services or to schedule a consultation!</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="Consultation">Consultation</option>
+                    <option value="Checkup">Checkup</option>
+                    <option value="Treatment">Treatment</option>
+                    <option value="BuyHealthcare">Buy Healthcare</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

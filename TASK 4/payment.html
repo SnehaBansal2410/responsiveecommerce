@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - TotalHomes</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url("Neutral\ Wall\ Zoom\ Background\ Pack\ Virtual\ Backgrounds\,\ Online\ Zoom\ Meetings\,\ Simple\ Digital\ Meeting\ Backgrounds\,\ Minimalist\ Background\ -\ Etsy.jpg");
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .option {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #0056b3;
+        }
+        .done-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .done-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Payment Option</h2>
+        <div class="payment-options">
+            <button class="option" onclick="selectPayment('COD')">Cash on Delivery</button>
+            <button class="option" onclick="selectPayment('Net Banking')">Net Banking</button>
+            <button class="option" onclick="selectPayment('Cards')">Cards</button>
+        </div>
+        <button class="done-button" onclick="proceedToConfirmation()">Done</button>
+    </div>
+
+    <script>
+        function selectPayment(option) {
+            // You can implement logic here to handle selected payment option
+            console.log('Selected Payment Option:', option);
+        }
+
+        function proceedToConfirmation() {
+            // Redirect to confirmation page
+            window.location.href = 'confirmation.html';
+        }
+    </script>
+</body>
+</html>
